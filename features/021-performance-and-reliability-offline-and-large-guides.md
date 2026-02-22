@@ -1,7 +1,7 @@
 ---
 id: 021
 name: Performance and Reliability - Offline and Large Guides
-status: Planned
+status: Complete
 ---
 
 # 021 - Performance and Reliability - Offline and Large Guides

@@ -1,7 +1,7 @@
 ---
 id: 025
 name: Capture Exclusions and User Warnings
-status: Planned
+status: Complete
 ---
 
 # 025 - Capture Exclusions and User Warnings

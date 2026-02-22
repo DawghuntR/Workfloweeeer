@@ -1,7 +1,7 @@
 ---
 id: 017
 name: Recording Session Management - Pause/Resume and Undo
-status: Planned
+status: Complete
 ---
 
 # 017 - Recording Session Management - Pause/Resume and Undo

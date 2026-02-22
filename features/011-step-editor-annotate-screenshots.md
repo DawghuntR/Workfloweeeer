@@ -1,7 +1,7 @@
 ---
 id: 011
 name: Step Editor - Annotate Screenshots
-status: Planned
+status: Complete
 ---
 
 # 011 - Step Editor - Annotate Screenshots

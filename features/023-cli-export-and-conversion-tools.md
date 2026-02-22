@@ -1,7 +1,7 @@
 ---
 id: 023
 name: CLI Export and Conversion Tools
-status: Planned
+status: Complete
 ---
 
 # 023 - CLI Export and Conversion Tools

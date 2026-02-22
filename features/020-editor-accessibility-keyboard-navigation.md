@@ -1,7 +1,7 @@
 ---
 id: 020
 name: Editor Accessibility - Keyboard Navigation
-status: Planned
+status: Complete
 ---
 
 # 020 - Editor Accessibility - Keyboard Navigation

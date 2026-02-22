@@ -1,7 +1,7 @@
 ---
 id: 022
 name: Local LLM Step Description Summarization (Ollama)
-status: Planned
+status: Complete
 ---
 
 # 022 - Local LLM Step Description Summarization (Ollama)

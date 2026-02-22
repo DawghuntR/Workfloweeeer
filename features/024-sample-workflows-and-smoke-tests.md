@@ -1,7 +1,7 @@
 ---
 id: 024
 name: Sample Workflows and Smoke Tests
-status: Planned
+status: Complete
 ---
 
 # 024 - Sample Workflows and Smoke Tests

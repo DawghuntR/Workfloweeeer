@@ -1,0 +1,139 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440002",
+  "schemaVersion": "1.0",
+  "title": "Creating a New Project in VS Code",
+  "description": "Step-by-step guide for creating a new project folder and opening it in Visual Studio Code",
+  "createdAt": "2024-01-16T14:00:00.000Z",
+  "updatedAt": "2024-01-16T14:20:00.000Z",
+  "source": "desktop",
+  "steps": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440301",
+      "title": "Open VS Code",
+      "description": "Launch Visual Studio Code from your applications menu or desktop shortcut.",
+      "actionType": "click",
+      "timestamp": "2024-01-16T14:01:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Visual Studio Code",
+        "processName": "code"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440302",
+      "title": "Open Command Palette",
+      "description": "Press Ctrl+Shift+P (or Cmd+Shift+P on Mac) to open the Command Palette.",
+      "actionType": "key",
+      "timestamp": "2024-01-16T14:02:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Visual Studio Code"
+      },
+      "inputValue": "Ctrl+Shift+P",
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440303",
+      "title": "Search for 'Open Folder'",
+      "description": "Type 'Open Folder' in the command palette to find the folder opening command.",
+      "actionType": "input",
+      "timestamp": "2024-01-16T14:03:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Visual Studio Code",
+        "placeholder": ">"
+      },
+      "inputValue": "Open Folder",
+      "inputMasked": false,
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440304",
+      "title": "Select 'File: Open Folder'",
+      "description": "Click on 'File: Open Folder' from the command palette results.",
+      "actionType": "click",
+      "timestamp": "2024-01-16T14:04:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Visual Studio Code",
+        "elementText": "File: Open Folder"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440305",
+      "title": "Navigate to Projects Directory",
+      "description": "In the file browser dialog, navigate to your projects directory.",
+      "actionType": "navigate",
+      "timestamp": "2024-01-16T14:05:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Open Folder"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440306",
+      "title": "Create New Folder",
+      "description": "Click the 'New Folder' button to create a new project directory.",
+      "actionType": "click",
+      "timestamp": "2024-01-16T14:06:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Open Folder",
+        "elementText": "New Folder"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440307",
+      "title": "Name the Project Folder",
+      "description": "Enter a name for your new project folder.",
+      "actionType": "input",
+      "timestamp": "2024-01-16T14:07:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Open Folder"
+      },
+      "inputValue": "my-new-project",
+      "inputMasked": false,
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440308",
+      "title": "Open the Project Folder",
+      "description": "Click 'Open' to open the newly created folder in VS Code.",
+      "actionType": "click",
+      "timestamp": "2024-01-16T14:08:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Open Folder",
+        "elementText": "Open"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    }
+  ],
+  "metadata": {
+    "app": "Visual Studio Code",
+    "environment": "Desktop",
+    "tags": ["vscode", "development", "project-setup"],
+    "author": "Documentation Team"
+  }
+}

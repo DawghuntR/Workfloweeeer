@@ -1,7 +1,7 @@
 ---
 id: 001
 name: Guide Data Model and JSON Schema
-status: Planned
+status: Complete
 ---
 
 # 001 - Guide Data Model and JSON Schema

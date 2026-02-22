@@ -1,0 +1,182 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440003",
+  "schemaVersion": "1.0",
+  "title": "Uploading a File from Desktop to Web Application",
+  "description": "Step-by-step guide demonstrating a workflow that spans both desktop file management and web browser interaction",
+  "createdAt": "2024-01-17T09:00:00.000Z",
+  "updatedAt": "2024-01-17T09:30:00.000Z",
+  "source": "mixed",
+  "steps": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440401",
+      "title": "Open File Manager",
+      "description": "Open your system's file manager to locate the file you want to upload.",
+      "actionType": "click",
+      "timestamp": "2024-01-17T09:01:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Files",
+        "processName": "nautilus"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440402",
+      "title": "Navigate to Documents Folder",
+      "description": "Navigate to the Documents folder where your file is stored.",
+      "actionType": "click",
+      "timestamp": "2024-01-17T09:02:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Files",
+        "elementText": "Documents"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440403",
+      "title": "Copy File Path",
+      "description": "Right-click the file and copy its path for later use.",
+      "actionType": "rightClick",
+      "timestamp": "2024-01-17T09:03:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Files",
+        "elementText": "report.pdf"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440404",
+      "title": "Open Web Browser",
+      "description": "Switch to your web browser with the upload page open.",
+      "actionType": "click",
+      "timestamp": "2024-01-17T09:05:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Google Chrome",
+        "processName": "chrome"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440405",
+      "title": "Navigate to Upload Page",
+      "description": "Go to the web application's file upload page.",
+      "actionType": "navigate",
+      "timestamp": "2024-01-17T09:06:00.000Z",
+      "source": "chrome",
+      "target": {
+        "url": "https://app.example.com/upload"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440406",
+      "title": "Click Upload Button",
+      "description": "Click the 'Upload File' button to open the file selection dialog.",
+      "actionType": "click",
+      "timestamp": "2024-01-17T09:07:00.000Z",
+      "source": "chrome",
+      "target": {
+        "selector": "button.upload-btn",
+        "elementText": "Upload File",
+        "elementRole": "button"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": [
+        {
+          "id": "550e8400-e29b-41d4-a716-446655440501",
+          "type": "arrow",
+          "x": 30,
+          "y": 20,
+          "endX": 50,
+          "endY": 45,
+          "color": "#FF0000",
+          "strokeWidth": 3
+        }
+      ]
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440407",
+      "title": "Select the File",
+      "description": "In the file picker dialog, navigate to and select the file you want to upload.",
+      "actionType": "click",
+      "timestamp": "2024-01-17T09:08:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Open File",
+        "elementText": "report.pdf"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440408",
+      "title": "Confirm File Selection",
+      "description": "Click 'Open' to confirm the file selection.",
+      "actionType": "click",
+      "timestamp": "2024-01-17T09:09:00.000Z",
+      "source": "desktop",
+      "target": {
+        "windowTitle": "Open File",
+        "elementText": "Open"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440409",
+      "title": "Add File Description",
+      "description": "Enter a description for the uploaded file in the web form.",
+      "actionType": "input",
+      "timestamp": "2024-01-17T09:10:00.000Z",
+      "source": "chrome",
+      "target": {
+        "selector": "#file-description",
+        "elementLabel": "Description",
+        "placeholder": "Enter file description..."
+      },
+      "inputValue": "Q4 2023 Financial Report",
+      "inputMasked": false,
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440410",
+      "title": "Submit Upload",
+      "description": "Click the 'Submit' button to complete the file upload.",
+      "actionType": "click",
+      "timestamp": "2024-01-17T09:11:00.000Z",
+      "source": "chrome",
+      "target": {
+        "selector": "button[type='submit']",
+        "elementText": "Submit",
+        "elementRole": "button"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    }
+  ],
+  "metadata": {
+    "app": "Mixed (File Manager + Web App)",
+    "environment": "Desktop + Web Browser",
+    "tags": ["file-upload", "cross-app", "mixed-workflow"],
+    "author": "Documentation Team"
+  }
+}

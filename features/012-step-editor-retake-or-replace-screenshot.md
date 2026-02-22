@@ -1,7 +1,7 @@
 ---
 id: 012
 name: Step Editor - Retake or Replace Screenshot
-status: Planned
+status: Complete
 ---
 
 # 012 - Step Editor - Retake or Replace Screenshot

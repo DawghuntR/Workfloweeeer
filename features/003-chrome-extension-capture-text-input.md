@@ -1,7 +1,7 @@
 ---
 id: 003
 name: Chrome Extension Capture - Text Input
-status: Planned
+status: Complete
 ---
 
 # 003 - Chrome Extension Capture - Text Input

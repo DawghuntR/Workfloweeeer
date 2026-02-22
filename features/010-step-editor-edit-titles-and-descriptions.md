@@ -1,7 +1,7 @@
 ---
 id: 010
 name: Step Editor - Edit Titles and Descriptions
-status: Planned
+status: Complete
 ---
 
 # 010 - Step Editor - Edit Titles and Descriptions

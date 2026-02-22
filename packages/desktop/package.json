@@ -1,0 +1,32 @@
+{
+  "name": "@workfloweeeer/desktop",
+  "version": "0.1.0",
+  "description": "Desktop app for recording workflows",
+  "main": "dist/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "start": "electron .",
+    "test": "vitest",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@workfloweeeer/core": "^0.1.0",
+    "@workfloweeeer/storage": "^0.1.0",
+    "@workfloweeeer/export": "^0.1.0",
+    "electron-localshortcut": "^3.2.1",
+    "screenshot-desktop": "^1.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1",
+    "electron-vite": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.2",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}

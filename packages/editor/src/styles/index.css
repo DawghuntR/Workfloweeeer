@@ -1,0 +1,21 @@
+/**
+ * Workfloweeeer Editor Styles - Main Entry Point
+ * 
+ * Import this file in your application to apply all editor styles.
+ * 
+ * Usage:
+ * ```js
+ * import '@workfloweeeer/editor/styles';
+ * ```
+ * 
+ * Or import individual stylesheets:
+ * ```js
+ * import '@workfloweeeer/editor/styles/editor.css';
+ * import '@workfloweeeer/editor/styles/themes.css';
+ * import '@workfloweeeer/editor/styles/utilities.css';
+ * ```
+ */
+
+@import './editor.css';
+@import './themes.css';
+@import './utilities.css';

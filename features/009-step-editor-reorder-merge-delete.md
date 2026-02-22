@@ -1,7 +1,7 @@
 ---
 id: 009
 name: Step Editor - Reorder, Merge, Delete
-status: Planned
+status: Complete
 ---
 
 # 009 - Step Editor - Reorder, Merge, Delete

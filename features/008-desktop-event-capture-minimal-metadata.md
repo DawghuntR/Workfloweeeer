@@ -1,7 +1,7 @@
 ---
 id: 008
 name: Desktop App - Event Capture (Minimal Metadata)
-status: Planned
+status: Complete
 ---
 
 # 008 - Desktop App - Event Capture (Minimal Metadata)

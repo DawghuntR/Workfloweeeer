@@ -1,7 +1,7 @@
 ---
 id: 007
 name: Desktop App - Window Selection and Screenshot Capture
-status: Planned
+status: Complete
 ---
 
 # 007 - Desktop App - Window Selection and Screenshot Capture

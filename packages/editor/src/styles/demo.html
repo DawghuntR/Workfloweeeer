@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workfloweeeer Editor - Style Demo</title>
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    body {
+      font-family: var(--font-family-base);
+      background-color: var(--color-bg-secondary);
+      padding: var(--space-xl);
+      margin: 0;
+    }
+
+    .demo-section {
+      margin-bottom: var(--space-3xl);
+    }
+
+    .demo-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--space-xl);
+      padding: var(--space-xl);
+      background-color: var(--color-bg-primary);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+
+    .theme-controls {
+      display: flex;
+      gap: var(--space-md);
+    }
+
+    .demo-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: var(--space-xl);
+    }
+
+    @media (max-width: 768px) {
+      .demo-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header with Theme Controls -->
+    <div class="demo-header">
+      <div>
+        <h1>Workfloweeeer Editor</h1>
+        <p class="text-secondary">Professional styling system demo</p>
+      </div>
+      <div class="theme-controls">
+        <select id="themeSelect" class="btn btn-secondary">
+          <option value="">Default Theme</option>
+          <option value="dark">Dark</option>
+          <option value="high-contrast">High Contrast</option>
+          <option value="purple">Purple</option>
+          <option value="green">Green</option>
+          <option value="orange">Orange</option>
+          <option value="teal">Teal</option>
+          <option value="colorblind-rg">Colorblind (RG)</option>
+          <option value="colorblind-by">Colorblind (BY)</option>
+        </select>
+        <select id="densitySelect" class="btn btn-secondary">
+          <option value="">Default Density</option>
+          <option value="compact">Compact</option>
+          <option value="comfortable">Comfortable</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="demo-grid">
+      <!-- Step List Demo -->
+      <div class="demo-section">
+        <h2 class="mb-lg">Step List</h2>
+        <div class="step-list custom-scrollbar">
+          <div class="step-item selected">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <div class="step-header">
+                <span class="step-title">Navigate to login page</span>
+                <span class="step-action-type">click</span>
+              </div>
+              <p class="step-description">Click on the login button in the top navigation bar to access the authentication page.</p>
+            </div>
+            <div class="step-thumbnail">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='60' viewBox='0 0 80 60'%3E%3Crect fill='%23dbeafe' width='80' height='60'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='12' fill='%233b82f6'%3EImage%3C/text%3E%3C/svg%3E" alt="Screenshot">
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <div class="step-header">
+                <span class="step-title">Enter username</span>
+                <span class="step-action-type">type</span>
+              </div>
+              <p class="step-description">Type your username in the email field.</p>
+            </div>
+            <div class="step-thumbnail">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='60' viewBox='0 0 80 60'%3E%3Crect fill='%23f3f4f6' width='80' height='60'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='12' fill='%236b7280'%3EImage%3C/text%3E%3C/svg%3E" alt="Screenshot">
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <div class="step-header">
+                <span class="step-title">Enter password</span>
+                <span class="step-action-type">type</span>
+              </div>
+              <p class="step-description">Enter your secure password in the password field.</p>
+            </div>
+            <div class="step-thumbnail">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='60' viewBox='0 0 80 60'%3E%3Crect fill='%23f3f4f6' width='80' height='60'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='12' fill='%236b7280'%3EImage%3C/text%3E%3C/svg%3E" alt="Screenshot">
+            </div>
+          </div>
+
+          <div class="step-item drop-target">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <div class="step-header">
+                <span class="step-title">Click submit button</span>
+                <span class="step-action-type">click</span>
+              </div>
+              <p class="step-description">Submit the form by clicking the login button.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step Editor Demo -->
+      <div class="demo-section">
+        <h2 class="mb-lg">Step Editor</h2>
+        <div class="step-editor">
+          <div class="step-meta">
+            <span class="step-index">Step 1 of 4</span>
+            <span class="step-source">manual-recording</span>
+          </div>
+
+          <div class="form-group">
+            <label for="demo-title">Title</label>
+            <input id="demo-title" type="text" value="Navigate to login page" placeholder="Step title...">
+          </div>
+
+          <div class="form-group">
+            <label for="demo-description">Description</label>
+            <textarea id="demo-description" placeholder="Describe this step..." rows="4">Click on the login button in the top navigation bar to access the authentication page.</textarea>
+          </div>
+
+          <div class="step-details">
+            <div class="detail-row">
+              <span class="detail-label">Action Type</span>
+              <span class="detail-value">click</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Element</span>
+              <span class="detail-value">Login Button</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Timestamp</span>
+              <span class="detail-value">2/22/2026, 10:30:45 AM</span>
+            </div>
+          </div>
+
+          <div class="step-actions">
+            <button class="btn btn-primary">Save Changes</button>
+            <button class="btn btn-secondary">Cancel</button>
+            <button class="btn btn-danger ml-auto">Delete Step</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Annotation Editor Demo -->
+    <div class="demo-section">
+      <h2 class="mb-lg">Annotation Editor</h2>
+      <div class="annotation-editor">
+        <div class="annotation-toolbar">
+          <div class="tool-group">
+            <button class="tool-btn active" title="Select (V)">↖</button>
+            <button class="tool-btn" title="Arrow (A)">→</button>
+            <button class="tool-btn" title="Rectangle (R)">□</button>
+            <button class="tool-btn" title="Circle (C)">○</button>
+            <button class="tool-btn" title="Highlight (H)">▬</button>
+            <button class="tool-btn" title="Text (T)">T</button>
+          </div>
+          
+          <div class="tool-group">
+            <input type="color" value="#FF0000" title="Color">
+            <select title="Stroke width">
+              <option value="1">Thin</option>
+              <option value="2">Medium</option>
+              <option value="3" selected>Thick</option>
+              <option value="5">Extra thick</option>
+            </select>
+          </div>
+          
+          <div class="tool-group">
+            <button class="tool-btn danger" disabled title="Delete selected">🗑</button>
+          </div>
+        </div>
+        
+        <div class="canvas-container" style="min-height: 300px;">
+          <div class="empty-state">
+            <div class="empty-state-icon">🖼️</div>
+            <div class="empty-state-title">No screenshot available</div>
+            <div class="empty-state-description">Upload a screenshot to start annotating</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screenshot Replacer Demo -->
+    <div class="demo-section">
+      <h2 class="mb-lg">Screenshot Replacer</h2>
+      <div class="screenshot-replacer">
+        <div class="drop-zone">
+          <div class="placeholder">No screenshot</div>
+          <div class="overlay">
+            <p>Drop an image here or click to replace</p>
+          </div>
+        </div>
+        
+        <div class="screenshot-actions">
+          <button class="btn btn-secondary">Choose File</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Component Library -->
+    <div class="demo-section">
+      <h2 class="mb-lg">Component Library</h2>
+      
+      <div class="card mb-xl">
+        <h3 class="mb-md">Buttons</h3>
+        <div class="flex gap-md flex-wrap">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-danger">Danger</button>
+          <button class="btn btn-primary" disabled>Disabled</button>
+        </div>
+
+        <div class="divider"></div>
+
+        <h4 class="mb-md">Button Sizes</h4>
+        <div class="flex gap-md items-center flex-wrap">
+          <button class="btn btn-primary btn-sm">Small</button>
+          <button class="btn btn-primary">Default</button>
+          <button class="btn btn-primary btn-lg">Large</button>
+        </div>
+      </div>
+
+      <div class="card mb-xl">
+        <h3 class="mb-md">Badges</h3>
+        <div class="flex gap-md flex-wrap">
+          <span class="badge badge-primary">Primary</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-warning">Warning</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge badge-gray">Gray</span>
+        </div>
+      </div>
+
+      <div class="card mb-xl">
+        <h3 class="mb-md">Alerts</h3>
+        <div class="alert alert-info">
+          <strong>Info:</strong> This is an informational message.
+        </div>
+        <div class="alert alert-success">
+          <strong>Success:</strong> Your changes have been saved successfully.
+        </div>
+        <div class="alert alert-warning">
+          <strong>Warning:</strong> Please review your changes before proceeding.
+        </div>
+        <div class="alert alert-danger">
+          <strong>Error:</strong> Something went wrong. Please try again.
+        </div>
+      </div>
+
+      <div class="card mb-xl">
+        <h3 class="mb-md">Loading States</h3>
+        <div class="flex gap-lg items-center flex-wrap">
+          <div class="spinner spinner-sm"></div>
+          <div class="spinner"></div>
+          <div class="spinner spinner-lg"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="mb-md">Form Elements</h3>
+        <div class="form-group">
+          <label for="demo-input">Text Input</label>
+          <input id="demo-input" type="text" placeholder="Enter text...">
+        </div>
+        <div class="form-group">
+          <label for="demo-select">Select</label>
+          <select id="demo-select">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="demo-textarea">Textarea</label>
+          <textarea id="demo-textarea" placeholder="Enter description..." rows="3"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Theme switching
+    document.getElementById('themeSelect').addEventListener('change', (e) => {
+      if (e.target.value) {
+        document.body.setAttribute('data-theme', e.target.value);
+      } else {
+        document.body.removeAttribute('data-theme');
+      }
+    });
+
+    // Density switching
+    document.getElementById('densitySelect').addEventListener('change', (e) => {
+      if (e.target.value) {
+        document.body.setAttribute('data-density', e.target.value);
+      } else {
+        document.body.removeAttribute('data-density');
+      }
+    });
+
+    // Demo drag and drop interactions
+    document.querySelectorAll('.step-item').forEach(item => {
+      item.addEventListener('click', (e) => {
+        document.querySelectorAll('.step-item').forEach(i => i.classList.remove('selected'));
+        item.classList.add('selected');
+      });
+    });
+
+    // Drop zone interactions
+    const dropZone = document.querySelector('.drop-zone');
+    if (dropZone) {
+      dropZone.addEventListener('dragenter', () => {
+        dropZone.classList.add('dragover');
+      });
+      
+      dropZone.addEventListener('dragleave', () => {
+        dropZone.classList.remove('dragover');
+      });
+      
+      dropZone.addEventListener('drop', () => {
+        dropZone.classList.remove('dragover');
+      });
+    }
+  </script>
+</body>
+</html>

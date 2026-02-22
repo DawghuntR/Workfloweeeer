@@ -1,0 +1,350 @@
+/**
+ * Theme Variations for Workfloweeeer Editor
+ * Provides alternative color schemes and theme options
+ */
+
+/* ==========================================================================
+   Light Theme (Default)
+   ========================================================================== */
+
+:root,
+[data-theme="light"] {
+  /* Already defined in editor.css */
+}
+
+/* ==========================================================================
+   Dark Theme
+   ========================================================================== */
+
+[data-theme="dark"] {
+  /* Primary Colors */
+  --color-primary: #60a5fa;
+  --color-primary-hover: #3b82f6;
+  --color-primary-active: #2563eb;
+  --color-primary-light: rgba(96, 165, 250, 0.1);
+  --color-primary-focus: rgba(96, 165, 250, 0.3);
+  
+  --color-secondary: #818cf8;
+  --color-secondary-hover: #6366f1;
+  
+  --color-success: #34d399;
+  --color-success-light: rgba(52, 211, 153, 0.1);
+  
+  --color-warning: #fbbf24;
+  --color-warning-light: rgba(251, 191, 36, 0.1);
+  
+  --color-danger: #f87171;
+  --color-danger-hover: #ef4444;
+  --color-danger-light: rgba(248, 113, 113, 0.1);
+  --color-danger-focus: rgba(248, 113, 113, 0.3);
+  
+  /* Neutral Colors (inverted) */
+  --color-gray-50: #18181b;
+  --color-gray-100: #27272a;
+  --color-gray-200: #3f3f46;
+  --color-gray-300: #52525b;
+  --color-gray-400: #71717a;
+  --color-gray-500: #a1a1aa;
+  --color-gray-600: #d4d4d8;
+  --color-gray-700: #e4e4e7;
+  --color-gray-800: #f4f4f5;
+  --color-gray-900: #fafafa;
+  
+  /* Text Colors */
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #d4d4d8;
+  --color-text-tertiary: #a1a1aa;
+  --color-text-disabled: #71717a;
+  --color-text-inverse: #18181b;
+  
+  /* Background Colors */
+  --color-bg-primary: #18181b;
+  --color-bg-secondary: #27272a;
+  --color-bg-tertiary: #3f3f46;
+  --color-bg-overlay: rgba(0, 0, 0, 0.8);
+  
+  /* Border Colors */
+  --color-border-light: #3f3f46;
+  --color-border-medium: #52525b;
+  --color-border-dark: #71717a;
+  
+  /* Shadows */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark theme specific adjustments */
+[data-theme="dark"] .canvas-container {
+  background-color: var(--color-gray-100);
+  background-image: 
+    linear-gradient(45deg, var(--color-gray-200) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--color-gray-200) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--color-gray-200) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--color-gray-200) 75%);
+}
+
+[data-theme="dark"] .step-number {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================================================
+   High Contrast Theme
+   ========================================================================== */
+
+[data-theme="high-contrast"] {
+  --color-primary: #0066ff;
+  --color-primary-hover: #0052cc;
+  --color-primary-active: #003d99;
+  --color-primary-light: #e6f0ff;
+  --color-primary-focus: rgba(0, 102, 255, 0.4);
+  
+  --color-danger: #cc0000;
+  --color-danger-hover: #990000;
+  --color-danger-light: #ffe6e6;
+  
+  --color-success: #009900;
+  --color-success-light: #e6ffe6;
+  
+  --color-text-primary: #000000;
+  --color-text-secondary: #1a1a1a;
+  --color-text-tertiary: #4d4d4d;
+  
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f5f5f5;
+  
+  --color-border-light: #1a1a1a;
+  --color-border-medium: #000000;
+  --color-border-dark: #000000;
+}
+
+[data-theme="high-contrast"] .step-item,
+[data-theme="high-contrast"] .btn,
+[data-theme="high-contrast"] .form-group input,
+[data-theme="high-contrast"] .form-group textarea,
+[data-theme="high-contrast"] .form-group select,
+[data-theme="high-contrast"] .drop-zone {
+  border-width: 2px;
+}
+
+[data-theme="high-contrast"] .step-item.selected {
+  border-width: 3px;
+}
+
+/* ==========================================================================
+   Compact Theme (for smaller screens or dense layouts)
+   ========================================================================== */
+
+[data-density="compact"] {
+  --space-xs: 0.125rem;
+  --space-sm: 0.375rem;
+  --space-md: 0.5rem;
+  --space-lg: 0.75rem;
+  --space-xl: 1rem;
+  --space-2xl: 1.5rem;
+  
+  --font-size-xs: 0.6875rem;
+  --font-size-sm: 0.8125rem;
+  --font-size-base: 0.9375rem;
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.125rem;
+  --font-size-2xl: 1.375rem;
+}
+
+[data-density="compact"] .step-number {
+  width: 2rem;
+  height: 2rem;
+  font-size: var(--font-size-sm);
+}
+
+[data-density="compact"] .tool-btn {
+  width: 2rem;
+  height: 2rem;
+  font-size: var(--font-size-base);
+}
+
+[data-density="compact"] .btn {
+  padding: 0.5rem 0.75rem;
+}
+
+/* ==========================================================================
+   Comfortable Theme (for better readability)
+   ========================================================================== */
+
+[data-density="comfortable"] {
+  --space-xs: 0.375rem;
+  --space-sm: 0.625rem;
+  --space-md: 1rem;
+  --space-lg: 1.25rem;
+  --space-xl: 2rem;
+  --space-2xl: 2.5rem;
+  
+  --font-size-xs: 0.8125rem;
+  --font-size-sm: 0.9375rem;
+  --font-size-base: 1.0625rem;
+  --font-size-lg: 1.1875rem;
+  --font-size-xl: 1.375rem;
+  --font-size-2xl: 1.625rem;
+  
+  --line-height-tight: 1.375;
+  --line-height-normal: 1.625;
+  --line-height-relaxed: 1.875;
+}
+
+[data-density="comfortable"] .step-number {
+  width: 3rem;
+  height: 3rem;
+}
+
+[data-density="comfortable"] .tool-btn {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* ==========================================================================
+   Color-Blind Friendly Themes
+   ========================================================================== */
+
+/* Protanopia/Deuteranopia (Red-Green color blindness) */
+[data-theme="colorblind-rg"] {
+  --color-primary: #0077bb;
+  --color-primary-hover: #005a8c;
+  --color-primary-light: #e6f4ff;
+  
+  --color-success: #0077bb;
+  --color-success-light: #e6f4ff;
+  
+  --color-danger: #ee7733;
+  --color-danger-hover: #cc5511;
+  --color-danger-light: #ffede6;
+  
+  --color-warning: #ccbb44;
+  --color-warning-light: #fffaeb;
+}
+
+/* Tritanopia (Blue-Yellow color blindness) */
+[data-theme="colorblind-by"] {
+  --color-primary: #cc3311;
+  --color-primary-hover: #991100;
+  --color-primary-light: #ffe6e6;
+  
+  --color-success: #009988;
+  --color-success-light: #e6fffa;
+  
+  --color-danger: #cc3311;
+  --color-danger-hover: #991100;
+  --color-danger-light: #ffe6e6;
+  
+  --color-warning: #ee7733;
+  --color-warning-light: #ffede6;
+}
+
+/* ==========================================================================
+   Brand Color Themes (Alternative Palettes)
+   ========================================================================== */
+
+/* Purple Theme */
+[data-theme="purple"] {
+  --color-primary: #8b5cf6;
+  --color-primary-hover: #7c3aed;
+  --color-primary-active: #6d28d9;
+  --color-primary-light: #f3e8ff;
+  --color-primary-focus: rgba(139, 92, 246, 0.2);
+  
+  --color-secondary: #a78bfa;
+  --color-secondary-hover: #8b5cf6;
+}
+
+/* Purple theme gradient adjustment */
+[data-theme="purple"] .step-number {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+}
+
+/* Green Theme */
+[data-theme="green"] {
+  --color-primary: #10b981;
+  --color-primary-hover: #059669;
+  --color-primary-active: #047857;
+  --color-primary-light: #d1fae5;
+  --color-primary-focus: rgba(16, 185, 129, 0.2);
+  
+  --color-secondary: #34d399;
+  --color-secondary-hover: #10b981;
+}
+
+[data-theme="green"] .step-number {
+  background: linear-gradient(135deg, #10b981, #34d399);
+}
+
+/* Orange Theme */
+[data-theme="orange"] {
+  --color-primary: #f97316;
+  --color-primary-hover: #ea580c;
+  --color-primary-active: #c2410c;
+  --color-primary-light: #ffedd5;
+  --color-primary-focus: rgba(249, 115, 22, 0.2);
+  
+  --color-secondary: #fb923c;
+  --color-secondary-hover: #f97316;
+}
+
+[data-theme="orange"] .step-number {
+  background: linear-gradient(135deg, #f97316, #fb923c);
+}
+
+/* Teal Theme */
+[data-theme="teal"] {
+  --color-primary: #14b8a6;
+  --color-primary-hover: #0d9488;
+  --color-primary-active: #0f766e;
+  --color-primary-light: #ccfbf1;
+  --color-primary-focus: rgba(20, 184, 166, 0.2);
+  
+  --color-secondary: #2dd4bf;
+  --color-secondary-hover: #14b8a6;
+}
+
+[data-theme="teal"] .step-number {
+  background: linear-gradient(135deg, #14b8a6, #2dd4bf);
+}
+
+/* ==========================================================================
+   System Theme Preference Detection
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    /* Auto-apply dark theme if no explicit theme is set */
+    /* Uncomment to enable auto dark mode */
+    /* @import url('./themes.css'); */
+  }
+}
+
+@media (prefers-contrast: high) {
+  :root:not([data-theme]) {
+    /* Auto-apply high contrast if preferred */
+    /* Can be enabled by copying high-contrast theme values here */
+  }
+}
+
+/* ==========================================================================
+   Theme Transition Effects
+   ========================================================================== */
+
+.theme-transition {
+  transition: background-color var(--transition-slow),
+              color var(--transition-slow),
+              border-color var(--transition-slow);
+}
+
+/* Apply smooth transitions when theme changes */
+body.transitioning *,
+body.transitioning *::before,
+body.transitioning *::after {
+  transition: background-color var(--transition-slow),
+              color var(--transition-slow),
+              border-color var(--transition-slow),
+              box-shadow var(--transition-slow) !important;
+}

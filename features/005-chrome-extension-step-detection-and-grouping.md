@@ -1,7 +1,7 @@
 ---
 id: 005
 name: Chrome Extension - Step Detection and Grouping
-status: Planned
+status: Complete
 ---
 
 # 005 - Chrome Extension - Step Detection and Grouping

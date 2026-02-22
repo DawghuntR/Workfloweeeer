@@ -1,0 +1,37 @@
+{
+  "name": "workfloweeeer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Create step-by-step guides, SOPs, and documentation by recording workflows",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "dev:editor": "npm run dev --workspace=packages/editor",
+    "dev:desktop": "npm run dev --workspace=packages/desktop",
+    "dev:extension": "npm run dev --workspace=packages/extension",
+    "build:core": "npm run build --workspace=packages/core",
+    "build:editor": "npm run build --workspace=packages/editor",
+    "build:desktop": "npm run build --workspace=packages/desktop",
+    "build:extension": "npm run build --workspace=packages/extension",
+    "build:export": "npm run build --workspace=packages/export",
+    "build:cli": "npm run build --workspace=packages/cli",
+    "cli": "node packages/cli/dist/index.js"
+  },
+  "keywords": [
+    "workflow",
+    "documentation",
+    "sop",
+    "guide",
+    "screenshot",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

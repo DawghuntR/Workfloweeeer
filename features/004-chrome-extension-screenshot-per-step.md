@@ -1,7 +1,7 @@
 ---
 id: 004
 name: Chrome Extension - Screenshot Per Step
-status: Planned
+status: Complete
 ---
 
 # 004 - Chrome Extension - Screenshot Per Step

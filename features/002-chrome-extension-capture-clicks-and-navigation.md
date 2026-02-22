@@ -1,7 +1,7 @@
 ---
 id: 002
 name: Chrome Extension Capture - Clicks and Navigation
-status: Planned
+status: Complete
 ---
 
 # 002 - Chrome Extension Capture - Clicks and Navigation

@@ -1,0 +1,238 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Workfloweeeer Guide Schema",
+  "description": "Schema for workflow documentation guides",
+  "type": "object",
+  "required": ["id", "schemaVersion", "title", "createdAt", "updatedAt", "source", "steps"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the guide"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0",
+      "description": "Version of the schema"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the guide"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of what this guide covers"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation timestamp"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last update timestamp"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["chrome", "desktop", "mixed"],
+      "description": "Source of the recording"
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Step"
+      },
+      "description": "Ordered list of steps"
+    },
+    "metadata": {
+      "$ref": "#/definitions/GuideMetadata"
+    },
+    "aiSummary": {
+      "type": "string",
+      "description": "AI-generated summary of the guide"
+    }
+  },
+  "definitions": {
+    "Step": {
+      "type": "object",
+      "required": ["id", "actionType", "timestamp", "source"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "actionType": {
+          "type": "string",
+          "enum": ["click", "doubleClick", "rightClick", "input", "navigate", "scroll", "key", "select", "hover", "drag", "paste", "custom"]
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "source": {
+          "type": "string",
+          "enum": ["chrome", "desktop", "manual"]
+        },
+        "target": {
+          "$ref": "#/definitions/TargetMetadata"
+        },
+        "inputValue": {
+          "type": "string"
+        },
+        "inputMasked": {
+          "type": "boolean"
+        },
+        "screenshotBase64": {
+          "type": "string"
+        },
+        "screenshotMimeType": {
+          "type": "string"
+        },
+        "annotations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Annotation"
+          }
+        },
+        "aiSummary": {
+          "type": "string"
+        },
+        "aiDescription": {
+          "type": "string"
+        },
+        "metadata": {
+          "type": "object"
+        }
+      }
+    },
+    "TargetMetadata": {
+      "type": "object",
+      "properties": {
+        "selector": {
+          "type": "string"
+        },
+        "xpath": {
+          "type": "string"
+        },
+        "elementText": {
+          "type": "string"
+        },
+        "elementRole": {
+          "type": "string"
+        },
+        "elementLabel": {
+          "type": "string"
+        },
+        "placeholder": {
+          "type": "string"
+        },
+        "inputName": {
+          "type": "string"
+        },
+        "inputId": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "windowTitle": {
+          "type": "string"
+        },
+        "processName": {
+          "type": "string"
+        },
+        "coordinates": {
+          "type": "object",
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" }
+          }
+        }
+      }
+    },
+    "Annotation": {
+      "type": "object",
+      "required": ["id", "type", "x", "y"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["arrow", "box", "highlight", "text", "circle", "freehand"]
+        },
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        },
+        "endX": {
+          "type": "number"
+        },
+        "endY": {
+          "type": "number"
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "x": { "type": "number" },
+              "y": { "type": "number" }
+            }
+          }
+        },
+        "color": {
+          "type": "string"
+        },
+        "strokeWidth": {
+          "type": "number"
+        },
+        "text": {
+          "type": "string"
+        },
+        "fontSize": {
+          "type": "number"
+        }
+      }
+    },
+    "GuideMetadata": {
+      "type": "object",
+      "properties": {
+        "app": {
+          "type": "string"
+        },
+        "environment": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "author": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

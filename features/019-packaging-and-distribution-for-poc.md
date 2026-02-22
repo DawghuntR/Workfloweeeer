@@ -1,7 +1,7 @@
 ---
 id: 019
 name: Packaging and Distribution for POC
-status: Planned
+status: Complete
 ---
 
 # 019 - Packaging and Distribution for POC

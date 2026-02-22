@@ -1,0 +1,126 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440001",
+  "schemaVersion": "1.0",
+  "title": "Creating a GitHub Issue",
+  "description": "Step-by-step guide for creating a new issue in a GitHub repository",
+  "createdAt": "2024-01-15T10:00:00.000Z",
+  "updatedAt": "2024-01-15T10:15:00.000Z",
+  "source": "chrome",
+  "steps": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440101",
+      "title": "Navigate to GitHub Repository",
+      "description": "Open your web browser and navigate to the GitHub repository where you want to create an issue.",
+      "actionType": "navigate",
+      "timestamp": "2024-01-15T10:01:00.000Z",
+      "source": "chrome",
+      "target": {
+        "url": "https://github.com/user/repository"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440102",
+      "title": "Click on Issues Tab",
+      "description": "Locate and click on the 'Issues' tab in the repository navigation.",
+      "actionType": "click",
+      "timestamp": "2024-01-15T10:02:00.000Z",
+      "source": "chrome",
+      "target": {
+        "selector": "a[data-tab-item='issues']",
+        "elementText": "Issues",
+        "elementRole": "tab"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": [
+        {
+          "id": "550e8400-e29b-41d4-a716-446655440201",
+          "type": "box",
+          "x": 15,
+          "y": 8,
+          "width": 10,
+          "height": 4,
+          "color": "#FF0000",
+          "strokeWidth": 2
+        }
+      ]
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440103",
+      "title": "Click New Issue Button",
+      "description": "Click the green 'New issue' button to start creating a new issue.",
+      "actionType": "click",
+      "timestamp": "2024-01-15T10:03:00.000Z",
+      "source": "chrome",
+      "target": {
+        "selector": "a.btn-primary",
+        "elementText": "New issue",
+        "elementRole": "link"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440104",
+      "title": "Enter Issue Title",
+      "description": "Type a clear, descriptive title for your issue in the title field.",
+      "actionType": "input",
+      "timestamp": "2024-01-15T10:04:00.000Z",
+      "source": "chrome",
+      "target": {
+        "selector": "#issue_title",
+        "elementLabel": "Title",
+        "placeholder": "Title"
+      },
+      "inputValue": "Bug: Application crashes on startup",
+      "inputMasked": false,
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440105",
+      "title": "Enter Issue Description",
+      "description": "Provide detailed information about the issue in the description field, including steps to reproduce, expected behavior, and actual behavior.",
+      "actionType": "input",
+      "timestamp": "2024-01-15T10:06:00.000Z",
+      "source": "chrome",
+      "target": {
+        "selector": "#issue_body",
+        "elementLabel": "Leave a comment",
+        "placeholder": "Leave a comment"
+      },
+      "inputValue": "## Description\nThe application crashes immediately after startup.\n\n## Steps to Reproduce\n1. Launch the application\n2. Observe the crash\n\n## Expected Behavior\nApplication should start normally.",
+      "inputMasked": false,
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440106",
+      "title": "Submit the Issue",
+      "description": "Click the 'Submit new issue' button to create the issue.",
+      "actionType": "click",
+      "timestamp": "2024-01-15T10:08:00.000Z",
+      "source": "chrome",
+      "target": {
+        "selector": "button[type='submit']",
+        "elementText": "Submit new issue",
+        "elementRole": "button"
+      },
+      "screenshotBase64": "",
+      "screenshotMimeType": "image/png",
+      "annotations": []
+    }
+  ],
+  "metadata": {
+    "app": "GitHub",
+    "environment": "Web Browser",
+    "tags": ["github", "issue-tracking", "web"],
+    "author": "Documentation Team"
+  }
+}

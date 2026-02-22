@@ -1,7 +1,7 @@
 ---
 id: 026
 name: Crash Recovery and Autosave
-status: Planned
+status: Complete
 ---
 
 # 026 - Crash Recovery and Autosave

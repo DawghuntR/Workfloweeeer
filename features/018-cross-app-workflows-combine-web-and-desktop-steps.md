@@ -1,7 +1,7 @@
 ---
 id: 018
 name: Cross-App Workflows - Combine Web and Desktop Steps
-status: Planned
+status: Complete
 ---
 
 # 018 - Cross-App Workflows - Combine Web and Desktop Steps

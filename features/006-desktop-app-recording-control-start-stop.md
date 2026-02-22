@@ -1,7 +1,7 @@
 ---
 id: 006
 name: Desktop App - Recording Control (Start/Stop)
-status: Planned
+status: Complete
 ---
 
 # 006 - Desktop App - Recording Control (Start/Stop)

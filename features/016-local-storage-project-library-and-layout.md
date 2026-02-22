@@ -1,7 +1,7 @@
 ---
 id: 016
 name: Local Storage - Project Library and Layout
-status: Planned
+status: Complete
 ---
 
 # 016 - Local Storage - Project Library and Layout
